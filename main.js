@@ -1,20 +1,19 @@
 const container = document.querySelector(".container")
 
 let div = document.createElement("div");
-div.classList.add("box");
+div.classList.add("square");
 
-// container.appendChild(div);
-
+// creates 2500 divs (squares)
 for (let i = 0; i < 2500; i++) {
     container.appendChild(div.cloneNode(true));
 }
 
-let box = document.querySelectorAll(".box");
+let square = document.querySelectorAll(".square");
 
 
-for (let i = 0 ; i < box.length; i++) {
-    box[i].onmouseover=function(){box[i].classList.add("colour")};
+for (let i = 0 ; i < square.length; i++) {
+    square[i].onmouseover=function(){square[i].classList.add("colour")};
 }
-// for (let i in box) {
-//     box[i].onmouseover=function(){box[i].classList.add("colour")};
+// for (let i in square) {
+//     square[i].onmouseover=function(){square[i].classList.add("colour")};
 // }
