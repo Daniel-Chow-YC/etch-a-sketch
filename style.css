@@ -2,10 +2,10 @@ h1 {
     text-align: center;
 }
 
-/* This creates a 16x16 grid -- Start*/
+/* This creates a 50x50 grid -- Start*/
 .container {
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
+    grid-template-columns: repeat(50, 1fr);
     width: 600px;
     height: 600px;
     border: 0.5px solid rgba(0,0,0,0.80);
@@ -19,7 +19,7 @@ h1 {
     height:1fr;
     width: 1fr;
 }
-/* This creates a 16x16 grid -- End*/
+/* This creates a 50x50 grid -- End*/
 
 .colour {
     background-color: black;

@@ -5,7 +5,7 @@ div.classList.add("box");
 
 // container.appendChild(div);
 
-for (let i = 0; i < 256; i++) {
+for (let i = 0; i < 2500; i++) {
     container.appendChild(div.cloneNode(true));
 }
 
