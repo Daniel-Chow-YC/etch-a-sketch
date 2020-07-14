@@ -8,3 +8,13 @@ div.classList.add("box");
 for (let i = 0; i < 256; i++) {
     container.appendChild(div.cloneNode(true));
 }
+
+let box = document.querySelectorAll(".box");
+
+
+for (let i = 0 ; i < box.length; i++) {
+    box[i].onmouseover=function(){box[i].classList.add("colour")};
+}
+// for (let i in box) {
+//     box[i].onmouseover=function(){box[i].classList.add("colour")};
+// }
