@@ -31,13 +31,23 @@ makeBlack();
 //     square[i].onmouseover=function(){square[i].classList.add("colour")};
 // }
 
-// reset button -- returns all squares to white colour
+
+
+// Clear button -- returns all squares to white colour and returns current grid size
 function reset() {
+    let currentGridSize = Math.sqrt(square.length);
     clearGrid();
-    createGrid();
+    createGrid(currentGridSize);
     makeBlack();
 }
-    
+
+// create a 25 by 25 grid
+function grid25() {
+    clearGrid();
+    createGrid(25);
+    makeBlack();
+}
+
 // create a 50 by 50 grid
 function grid50() {
     clearGrid();
@@ -50,4 +60,13 @@ function grid75() {
     clearGrid();
     createGrid(75);
     makeBlack();
+}
+
+// create custom grid
+function customGrid() {
+    gridNum = prompt("How many squares per side for your grid?", 25);
+    clearGrid();
+    createGrid(gridNum);
+    makeBlack(); 
+
 }
